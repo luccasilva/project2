@@ -89,7 +89,7 @@ in
 end handle MatchResTypeDiff => print ("PASSOU! => MatchResTypeDiff deu raised\n");
 
 let
-    val test = teval (fromString "match foo with | 1 -> true | 0 -> false end") [("foo", BoolT)]
+    val test = teval (fromString "match x with | 1 -> true | 0 -> false end") [("x", BoolT)]
 in
     print("ERRO! => MatchCondTypesDiff não deu raised\n");
     raise testError
