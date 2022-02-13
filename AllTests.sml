@@ -123,8 +123,6 @@ in
     raise testError
 end handle OpNonList => print ("PASSOU! => OpNonList deu raised\n");
 
-print("SUCCESSO!\n")
-
 (*TESTES CRIADOS - INTERPRETER*)
 
 let 
@@ -161,9 +159,6 @@ in
     print("ERRO! => NotAFunc deveria ter raised\n");
     raise testError
 end handle NotAFunc => print ("PASSOU! => NotAFunc deu raised\n");
-
-
-print("SUCCESS!\n")
 
 (*TESTES CRIADOS - ENVIRONING*)
 
