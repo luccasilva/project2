@@ -1,8 +1,10 @@
 exception codeError;
 
-use "AllTests.sml";
+use "testInterpreting.sml";
+use "testEnvironing.sml";
 use "testParserCases.sml";
 use "testParser.sml";
+use "testTypeChecking.sml";
 
 fun runAll ([]) = "SUCCESSO!\n"
     | runAll ((x:string,y:expr)::t) = 
